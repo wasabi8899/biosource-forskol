@@ -1,0 +1,48 @@
+{
+	"CRM" : {
+		"apikey" : "c22f7374-16e9-4423-b207-4068fdb3af8b",
+		"storeid" : "461",
+		"leadtypeid" : "Garcix",
+		"defaults" : {
+			"campaignCode" : "WEB",
+			"landingPageID" : 1000,
+			"campaignId" : 12345,
+			"offer" : ""
+		}
+	},
+	"ORDERPAGE" : {
+		"products" : [
+			{
+				"description" : "BUY 3 BOTTLES & GET 2 FREE",
+				"packageId" : 12404,
+				"price" : 133,
+				"shipping" : 0
+			},
+			{
+				"description" : "BUY 2 BOTTLES & GET 1 FREE",
+				"packageId" : 12405,
+				"price" : 97.98,
+				"shipping" : 0
+			},
+			{
+				"description" : "BUY 1 BOTTLE",
+				"packageId" : 12406,
+				"price" : 58,
+				"shipping" : 0,
+				"products" : [
+								{	
+									"productId" : 4928,
+									"itemPrice" : 10,
+									"itemShipping" : 20,
+									"shippingTotal" : 20
+								}
+								]
+			}
+		],
+		
+		"allowedCountries" : ["US"],
+		"excludedStates" : [
+				{"countryCode":"US", "states" : ["AA","AP","AE"]}
+			]
+	}
+}

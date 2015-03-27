@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Garcix</title>
+	<link href="css/main.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.min.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="withTexture">
+	<div id="mainWrapper" class="container">
+		<div class="row">
+			<div id="wrapper">
+				
+				<div id="topSection" class="clearfix">
+					<img src="images/top-section-model.png" alt="" class="model"/>
+					<img src="images/top-section-title.png" alt="" class="title"/>
+					<img src="images/dual-action.png" alt="" class="dualAction"/>
+				</div><!-- END topSection -->
+	
+				<div id="thankYou">										  
+					<p class="title">Thank You For Your Order <span class="shippingInfo_first"> </span></p>
+					<p class="orderNumber">Your Order # is <span class="orderId"></span></p>
+					
+					<div class="row">
+						<div class="col-sm-7 leftSide">
+							<p class="subheading">What to expect:</p>
+							<ul>
+								<li>Your product will be shipped next business day.</li>
+								<li>It takes 5 to 10 days for items to arrive after the shipment</li>
+							</ul>
+						</div>
+						<div class="col-sm-5 rightSide">
+							<div class="enquiry">
+								<p>If you have any questions, or for some reason you do not receive your tracking number, feel free to call us at:</p>
+								<img src="images/telephone.png" alt="" class="icon"/>
+								<p class="telephone">1-888-353-0643</p>
+								<p>We are here for you!</p>
+							</div>
+						</div>
+					</div>
+				</div><!-- END thankYou -->
+				
+				<div id="weAccept">
+					<div class="col-sm-4 leftSide">
+						<p>We Accept:</p>
+						<img src="images/cards-accept.png" alt=""/>
+					</div>
+					<div class="col-sm-8 rightSide">
+						<p>We Accept:</p>
+						<img src="images/we-accept.png" alt=""/>
+					</div>
+				</div><!-- END weAccept -->
+				
+				{{> darkfooter}}
+
+			</div><!-- END wrapper -->
+		</div><!-- END row -->
+	</div><!-- END mainWrapper -->
+	
+
+	<script data-main="scripts/app" src="scripts/require.js"></script>
+	<script>
+	define('config',function(){
+		return {
+			DEBUG : true,
+			COUNTRYCODE : "US",
+			PAGETYPE : 'thankyou'
+		}
+	});
+	</script>
+</body>
+</html>

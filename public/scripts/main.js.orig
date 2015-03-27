@@ -1,0 +1,124 @@
+<<<<<<< HEAD
+require(["jquery","formTools","formActions","visitor","globals","common","accounting","bootstrap","jquery.validate","additional-methods"], function($,formTools,formActions,visitor,globals,common) {
+   		$(function() {
+
+   			// Common functions
+   			common.init.bind(this)();
+
+			var that = this;
+
+			console.log(that.visitor.campaignInfo.campaignCode);
+			//
+			//	Home apge
+			//
+			if(globals.PAGETYPE=='home'){
+
+			}
+
+=======
+require(["jquery","bootbox","formTools","messages","formActions","visitor","globals", "utilities","accounting","bootstrap","jquery.validate","additional-methods"], function ($, bootbox, formTools, messages, formActions, visitor, globals, utilities) {
+	$(function () {
+		
+		// Internals
+		this.visitor = null;
+		
+		
+		//
+		// 	Setup forms on page (validation & etc) and get all located forms & their fields
+		//
+		this._forms = formTools.setupForms.bind(this)({
+			countryCode: globals.COUNTRYCODE,
+			instantZipLookup: globals.ZIPLOOKUP
+		});
+		
+		// Setup persistent storage
+		this.visitor = visitor.init.bind(this)().data;
+		
+		// Bind actions
+		formActions.init.bind(this)();
+		
+		var that = this;
+		
+		//
+		//	Home apge
+		//
+		if (globals.PAGETYPE == 'start') {
+		}
+>>>>>>> origin/master
+			// 
+			// Order form code
+			//
+		else if (globals.PAGETYPE == 'order') {
+			
+			// Check if shipping info is valid or not
+			if (!this.visitor.shippingInfo.valid) {
+				// Go back a step
+				document.location.href = '/';
+			}
+			
+			// Set same shipping
+			$("input[name=sameShipping][value=" + (this.visitor.billingShippingSame ? "YES" : "NO") + "]").trigger("click");
+			
+			// Check if billing info is not the same
+			$(".offer.one .radioBtn").prop("checked", "checked");
+			
+			$(".offer").on("click", function (e) {
+				
+				item = $(this);
+				
+				// Update stylesheets
+				$(".offer").removeClass("selected");
+				item.addClass("selected");
+				item.find(".radioBtn").prop("checked", "checked");
+				
+				// Get ID of item
+				var packageId = item.data("id");
+				
+				if (packageId) {
+					// Update shopping cart
+					that.visitor.cartItemSelect(packageId);
+				}
+				e.preventDefault();
+					
+			});
+			
+			
+			// Check if we're adding default item
+			var Id = 0;
+			if (globals.DEFAULTPRODUCTID >= 0) {
+				Id = globals.DEFAULTPRODUCTID;
+				that.visitor.cartItemSelect(Id);
+			} else {
+				// Select 1s item on list
+				Id = that.visitor.cartFirstProduct.Id;
+			}
+			// Trigger click
+			$(".offer[data-id='" + Id + "']").click();
+
+		}
+
+			//
+			// Thank you page code
+		else if (globals.PAGETYPE == 'thankyou') {
+
+
+
+<<<<<<< HEAD
+		
+		});	
+=======
+		}
+		
+		// Pixel code placement
+		if (globals.PAGETYPE) {
+			//TODO: add checking that pixel was already fired
+			var template = utilities.getpixel(globals.PAGETYPE, this.visitor);
+			$("body").prepend(template);
+			//this.visitor["Pixel_" + globals.PAGETYPE) = true;
+			//this.visitor.save();
+				
+		}
+	});
+>>>>>>> origin/master
+
+});

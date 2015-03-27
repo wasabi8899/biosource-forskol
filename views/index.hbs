@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forskol</title>
+	<link href="css/main.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.min.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	
+	<div id="fruitBg">
+		<div id="mainWrapper" class="container">
+			<div class="row">
+				<div id="wrapper">
+
+					{{> header}}
+					<form method="post" id="mainform" data-type="lead">
+					<div id="intro" class="section">
+						<div class="row">
+							<div class="col-xs-12 col-sm-7">
+								<img src="images/intro-title.png" alt="" class="title"/>
+								<p>Forskolin an exotically-acclaimed extract and multipurpose ingredient (labdane diterpene) is derived from the root of the Plectranthus Barbatus plant. It is and has been an important cultural and medicinal plant throughout the world, especially in traditional Indian Ayurvedic medicine for many years </p>
+								
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="images/bottle.png" alt="" class="bottle"/>
+									</div>
+									
+									<div class="col-sm-8">
+										<p class="subtitle">Here’s What You Can Expect... </p>
+										<ul class="benefits">
+											<li>No nasty unnatural ingredients.</li>
+											<li>Manufactured in a facility registered by the FDA</li>
+											<li>Guaranteed purity, or your money back.</li>
+											<li>Contains Standardized for 20% forskolin 500 mg.</li>
+										</ul>
+									</div>
+									<p class="col-xs-12 col-md-8 col-sm-12">For a limited time, we are offering free shipping to our visitors on selected packages, so make sure you don’t miss out on an offer not seen anywhere else!</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-5">
+								
+								<img src="images/seals.png" alt="" class="seals"/>
+								<div class="form">
+									<div class="caption"><span><img src="images/form-caption.png" alt=""/></span></div>
+									<div class="field">
+										<label for="firstname">First Name:</label><input type="text" value="" name="firstname" class="textbox" id="firstname" placeholder="First name"/>
+										
+									</div>
+									<div class="field"><label for="lastName">Last Name:</label><input type="text" name="lastName" value="" class="textbox" id="lastName" placeholder="Last name"/></div>
+									<div class="field"><label for="zip">Zip:</label><input type="text" value="" name="zip" class="textbox" id="zip" placeholder="Zip Code"/></div>
+									<div class="field"><label for="address">Address:</label><input type="text" value="" class="textbox" id="address" name="address" placeholder="Address"/></div>
+									<div class="field"><label for="city">City:</label><input type="text" value="" class="textbox" name="city" id="city" placeholder="City"/></div>
+									<div class="field"><label for="state">State:</label><select id="state" name="state">
+                                <option value="">Select state</option>
+                                {{#each states}}
+                                <option value="{{code}}">{{name}}</option>
+                                {{/each}}
+                            </select></div>
+									<div class="field"><label for="zip">Phone:</label><input type="text" value="" class="textbox" name="phone" id="phone" placeholder="Phone #"/></div>
+									<div class="field"><label for="zip">Email:</label><input type="text" value="" name="email" class="textbox" id="email" placeholder="Email"/></div>
+									<div class="submit">
+										<button data-action='addlead' type="button"><img src="images/order-btn.png" alt=""/></button>
+										<img src="images/claim-arrow.png" alt="" class="arrow hidden-xs"/>
+									</div>
+								</div>
+								
+								<p class="terms"><a href="/terms">Terms &amp; Conditions</a></p>
+							</div>
+						</div>
+					</div><!-- END intro -->
+					
+					<div id="secret" class="section">
+						<img src="images/leaf.jpg" alt="" class="leaf" style="margin-top:-61px"/>
+						<img src="images/secret-title.png" alt="" class="title"/>
+						<div class="row">
+							<p class="col-sm-9">The first thing that you have to do in order to weed out the poor products from the best is to understand the standards. By making sure that the product you choose follows his strict standards, you can sleep easy knowing that it’s something that’s going to produce true results and not a memory of something that was only a waste of money. Below, you’ll see the standards that should kept in mind when considering the purchase of a Forskolin extract product. </p>
+							<div class="col-xs-12 col-sm-9">
+								<ul class="benefits">
+									<li>Forskolin Extract (Coleus forskohlii root extract) is the main ingredient.</li>
+									<li>Forskolin Extract isn’t something that has a lot of extra ingredients such as binders and fillers.</li>
+									<li>500mg per day is the proper dosage.</li>
+									<li>The product needs to be 100% pure and contained within a capsule.</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-5 facts">
+								<div class="suplements">
+									<table>
+										<caption>SUPPLEMENT FACTS</caption>
+										<tr><td colspan="2">Serving Size: 2 capsules<br/>Serving Per Container: 30</td></tr>
+										<tr class="served"><th>Amount Per Serving</th><th class="text-right">% Daily Value</th></tr>
+										<tr><td>Forskolin Extract (Coleus forskohlii root extract)</td><td class="text-right">500mg &nbsp;&nbsp;&nbsp; †</td></tr>
+										<tr class="standarized"><td colspan="2">Standardized for 20% (50 mg) forskolin</td></tr>
+										<tr><td colspan="2">† Daily value not established.</td></tr>
+									</table>
+								</div>
+								
+								<div class="info">
+									<p class="ingredients">Other ingredients: Gelatin, Magnesium Stearate, Silica.</p>
+									<p>Manufactured For:<br/>
+									Forskol<br/>
+									1180 N town Center Dr Ste 100<br/>
+									Las Vegas, NV 89144</p>
+								</div>
+								
+								<p class="note">These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, care or prevent any disease.</p>
+							</div>
+							
+							<div class="col-sm-7">
+								<p>These are the basic standards that you should compare your potential choice to if you want to ensure that it’s the real deal. Any products that can’t hold up to this standard can easily be deemed as a low quality product or sham, so it’s critical that you keep your eyes open to prevent getting taken for a ride. We make sure Forskolin extract can hold up to these standards. Not only does it follow the standards that were set forth above, but there are many people who have expressed the success that they were able to obtain by taking this particular supplement with diet &amp; exercise. Not to mention, it’s also a product that we’ve found which has the following traits to prove that it’s in fact the real deal when it comes to Forskolin extract.</p>
+								<ul class="benefits">
+									<li>Our Forskolin extract is manufactured in an FDA Registered facility.</li>
+									<li>They maintain a high set of quality standards to ensure customer satisfaction.</li>
+									<li>They offer a money back guarantee to ensure the highest level of customer satisfaction.</li>
+								</ul>
+
+								<p>We have gone the extra mile to ensure that their product isn’t one that’s going to end up being looked at as a sham. In fact, they have made sure that it’s the purest product of its type on the market. This is something that only comes from a team of dedicated professionals who are only out to help people achieve their goals.</p>
+							</div>
+						</div>
+						
+						
+					</div><!-- END secret -->
+					
+					<div id="final" class="section">
+						<img src="images/final-model.jpg" alt="" class="model"/>
+						<img src="images/final-title.png" alt="" class="title"/>
+						<p>It’s good to have a product on the market that doesn’t take advantage of people by making false claims and trying to get the most money out of their bank account as possible. Many supplement products will “auto bill” the customer’s credit card so that they can end up taking their customers for as many dollars as possible, whereas we offer an option where customers only pay as they go.</p>
+						
+						<div class="row">
+							<p class="col-sm-12 col-md-8">Not to mention, Forskolin extract contains 500mg per does of 20% Coleus forskohlii root extract (standardized for 20% forskolin) making it one of the most powerful forms of Forskolin extract seen on the market. This is probably the key to why we have so many satisfied customers. Of course the best results are seen with exercise and proper nutrition.</p>
+							
+							<div class="col-xs-12 col-sm-9 col-md-8">
+								<p class="subtitle">Here’s a quick recap on some of the strongest benefits of Forskolin extract</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<ul class="benefits">
+												<li>There aren’t any added fillers or unnecessary ingredients.</li>
+												<li>It’s backed by a money back guarantee, eliminating the risk of trying it out.</li>
+												<li>All standards set forth (both by their company and the government) for quality are upheld.</li>
+											</ul>
+										</div>
+										<div class="col-sm-6">
+											<ul class="benefits">
+												<li>Each supply is manufactured in an FDA Registered facility.</li>
+												<li>Contains the recommended amount of the main ingredient to ensure you get the most bang for the buck.</li>
+											</ul>
+										</div>
+									</div>
+								<p><br/>We try to run a legitimate business where customers come back for additional purchases on their own, requiring us to make a Forskolin extract product to make something that’s of a quality that people appreciate and can’t get enough of.</p>
+							</div>
+						</div>
+
+					</div><!-- END final -->
+					</form>
+
+					{{> footer}}
+
+				</div><!-- END wrapper -->
+			</div><!-- END row -->
+		</div><!-- END mainWrapper -->
+	</div><!-- END fruitBg -->
+	
+	
+</body>
+<script data-main="scripts/app" src="scripts/require.js"></script>
+<script>
+	define('config',function(){
+		return {
+			DEBUG : true,
+			COUNTRYCODE : "US",
+			ZIPLOOKUP : true,
+			PAGETYPE : 'start'
+		}
+	});
+</script>
+
+
+</html>

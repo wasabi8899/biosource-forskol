@@ -1,0 +1,185 @@
+.animation-corner {
+    -webkit-border-top-left-radius: 20px !important;
+    -webkit-border-bottom-left-radius: 20px !important;
+    -moz-border-radius-topleft: 20px !important;
+    -moz-border-radius-bottomleft: 20px !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    padding-top:31px;
+    background-color:rgba(0, 0, 0, 1);
+    min-width:95px;
+    background: #161616 url(../images/pattern_40.gif) top left repeat;
+}
+
+@media (min-width: 768px){
+    .animation-corner {
+
+    }
+}
+
+.ball {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 0 0 35px #2187e7;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    -moz-animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear;
+}
+
+.ball1 {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #2187e7;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: -40px;
+    -moz-animation: spinoff .5s infinite linear;
+    -webkit-animation: spinoff .5s infinite linear;
+}
+
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+
+
+.message{
+     border-top-left-radius: 20px !important;
+     border-top-right-radius: 20px !important;
+
+     background-size: 40px 40px;
+     background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+                        transparent 75%, transparent);                                      
+     box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+     width: 100%;
+    /* border: 1px solid;*/
+     color: #fff;
+     padding: 15px;
+     text-shadow: 0 1px 0 rgba(0,0,0,.5);
+     animation: animate-bg 5s linear infinite;
+}
+
+
+
+.message-modal .modal-footer {
+     border-bottom-left-radius: 20px !important;
+     border-bottom-right-radius: 20px !important;
+
+     background-size: 40px 40px;
+     background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+                        transparent 75%, transparent);                                      
+     box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+     width: 100%;
+     /*border: 1px solid;*/
+     color: #fff;
+     padding: 15px;
+     text-shadow: 0 1px 0 rgba(0,0,0,.5);
+     animation: animate-bg 5s linear infinite;
+    
+}
+
+
+.info,.info-modal .modal-footer{
+     background-color: #4ea5cd;
+     border-color: #3b8eb5;
+}
+
+.error,.error-modal .modal-footer{
+     background-color: #de4343;
+     border-color: #c43d3d;
+}
+     
+.warning,.warning-modal .modal-footer{
+     background-color: #eaaf51;
+     border-color: #d99a36;
+}
+
+.success,.success-modal .modal-footer{
+     background-color: #61b832;
+     border-color: #55a12c;
+}
+
+.message h3{
+     margin: 0 0 5px 0;                                                  
+}
+
+.message p{
+     margin: 0;                                                  
+}
+
+@keyframes animate-bg {
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
+
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-moz-keyframes spinoff {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+    };
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes spinoff {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    };
+}
