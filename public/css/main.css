@@ -19,8 +19,8 @@ body, div {
 
 body {
 	  -webkit-text-size-adjust: none;
-    	background-color: rgb(104, 0, 65) !important;
-     background: #680541url(../images/background-new.jpg) no-repeat center center fixed; 
+    	background-color: #2b4b24 !important;
+     background: #2b4b24 url(../images/background-new.jpg) no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
