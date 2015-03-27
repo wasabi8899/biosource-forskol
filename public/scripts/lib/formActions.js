@@ -63,6 +63,15 @@ define(["jquery","communication","messages"], function($,communication,messages)
          break;
          case "SALE" :
              message = "We are processing your order";
+             // Make sure there's at least 1 item selected
+             var itemfound = false;
+             if(visitor.shoppingCart)
+               if(visitor.shoppingCart.length>0) itemfound = true
+            if(!itemfound){
+               // No items found in shopping cart
+               messages.alert('Woops','Please select at least one product before continuing');
+               return;
+            }
          break;
          case "UPSELL" : 
          break;

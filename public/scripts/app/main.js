@@ -1,6 +1,10 @@
 require(["jquery","formTools","formActions","visitor","globals","common","accounting","bootstrap","jquery.validate","additional-methods"], function($,formTools,formActions,visitor,globals,common) {
    		$(function() {
 
+			if (window.location.protocol != "https:")
+			    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+
+
    			// Common functions
    			common.init.bind(this)();
 
@@ -53,19 +57,19 @@ require(["jquery","formTools","formActions","visitor","globals","common","accoun
 				
 				// Check if we're adding default item
 				var Id = 0;
-				if(globals.DEFAULTPRODUCTID>0){
-					Id = globals.DEFAULTPRODUCTID;
-					that.visitor.cartItemSelect(Id);
-				}else{
-					// Select 1s item on list of product
-					if(globals.PRODUCTS){
-						if(globals.PRODUCTS.length>0)
-							that.visitor.cartItemSelect(globals.PRODUCTS[0].productId || globals.PRODUCTS[0].packageId);
-					}
-					Id = that.visitor.cartFirstProduct.Id;
-				}
-				// Trigger click
-				$(".offer[data-id='" + Id + "']").click();
+				// if(globals.DEFAULTPRODUCTID>0){
+				// 	Id = globals.DEFAULTPRODUCTID;
+				// 	that.visitor.cartItemSelect(Id);
+				// }else{
+				// 	// Select 1s item on list of product
+				// 	if(globals.PRODUCTS){
+				// 		if(globals.PRODUCTS.length>0)
+				// 			that.visitor.cartItemSelect(globals.PRODUCTS[0].productId || globals.PRODUCTS[0].packageId);
+				// 	}
+				// 	Id = that.visitor.cartFirstProduct.Id;
+				// }
+				// // Trigger click
+				// $(".offer[data-id='" + Id + "']").click();
 
 			}
 

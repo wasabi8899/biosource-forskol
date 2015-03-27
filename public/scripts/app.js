@@ -1,5 +1,5 @@
 requirejs.config({
-    "baseUrl": "scripts/lib",
+    "baseUrl": "/scripts/lib",
     "paths": {
       "app" : "../app",
       "jquery": "jquery.min",

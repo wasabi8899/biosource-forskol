@@ -1,1 +1,0 @@
-var _AddPartial=require("./modules/methods/AddPartial.js"),_Sale=require("./modules/methods/Sale.js");exports.AddPartial=function(e){var a=new _AddPartial;a.ProcessRequest(e)},exports.Sale=function(e){var a=new _Sale;console.log("data received "+JSON.stringify(e)),a.ProcessRequest(e)};

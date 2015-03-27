@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> specialoffer/header}}
+
+<body>
+	<div id="mainWrapper">
+		<form method="post" id="mainform" data-type="lead">
+		<div id="introWrapper">
+			<div id="intro" class="section">
+				<img src="images/intro-light.png" alt="" class="light"/>
+				<div class="left">
+					<img src="images/intro-model.png" alt="" class="model"/>
+					<img src="images/intro-logo.png" alt="" class="logo"/>
+					<img src="images/intro-title.png" alt="" class="title"/>
+					<ul class="features">
+						<li><span>Increased Metabolic Rate</span></li>
+						<li><span>Increased Lean Body Mass</span></li>
+						<li><span>Breaks Down Stubborn Body Fat</span></li>
+					</ul>
+					<img src="images/seals.png" alt="" class="seals"/>
+					<img src="images/product-bottle.png" alt="" class="bottle one"/>
+					<img src="images/claim-arrow.png" alt="" class="claimArrow"/>
+					<img src="images/product-bottle.png" alt="" class="bottle two"/>
+					
+					<img src="images/twenty-percent.png" alt="" class="twentyPercent"/>
+				</div>
+				
+				<div class="right">
+					<div class="form">
+						<img src="images/form-caption.png" alt="" class="caption"/>
+						<div class="field"><label for="firstName">FIRST NAME</label><input type="text" placeholder="First Name" class="textbox" name="firstName"/><div class="clear"></div></div>
+						<div class="field"><label for="lastName">LAST NAME</label><input type="text" placeholder="Last Name" class="textbox" name="lastName"/><div class="clear"></div></div>
+						<div class="field"><label for="zip">Zipcode</label><input type="text" placeholder="Postal Code" class="textbox" name="zip"/><div class="clear"></div></div>
+						<div class="field"><label for="address">ADDRESS</label><input type="text" placeholder="Address" class="textbox" name="address"/><div class="clear"></div></div>
+						<div class="field"><label for="city">CITY</label><input type="text" placeholder="Address" class="textbox" name="city"/><div class="clear"></div></div>
+						<div class="field"><label for="state">STATE</label><select name="state"><option>Select State</option>
+                        {{#each states}}
+                        <option value="{{code}}">{{name}}</option>
+                        {{/each}}
+						</select><div class="clear"></div></div>
+						<div class="field"><label for="phone">PHONE</label><input type="text" placeholder="Phone" class="textbox" name="phone"/><div class="clear"></div></div>
+						<div class="field"><label for="email">EMAIL</label><input type="text" placeholder="Email" class="textbox" name="email"/><div class="clear"></div></div>
+						
+						<div class="submitBtn"><button data-action='addlead' type="button"><img src="images/order-btn-red.png" alt=""/></button></div>
+					</div>
+				</div>
+			</div><!-- END intro -->
+		</div><!-- END introWrapper -->
+		
+		<div id="whatIs" class="container section">
+			<div class="row">
+				<div class="col-sm-7 left">
+					<p class="title">What is Forskol?</p>
+					<p><strong>Forskol, a plant descendent from the mint family, grows on the mountain slopes of Nepal, India, and Thailand, and has held many benefits within ayurvedic medicine.</strong> Recent studies have shown the potential of this leaf to aid in obesity and fat loss.</p>
+					<p><strong>Recent buzz in the media about Forskol has increased the popularity of this ingredient as a potential solution to weight loss.</strong> Backed by multiple clinical studies showing the effectiveness, taking our Forskolin Extract can aid with your weight loss goals. </p>
+				</div>
+				
+				<div class="col-sm-5 right">
+					<img src="images/whatis-bg.jpg" alt=""/>
+				</div>
+			</div>
+		</div><!-- END whatIs -->
+		
+		<div id="extractWrapper">
+			<div id="extract" class="section clearfix">
+				<img src="images/extract-model.png" alt="" class="model"/>
+				<div class="texts">
+					<p class="title">Forskolin Extract Burns Fat From Within!</p>
+					<p class="subtitle">Forskolin Extract is the start of an incredible weight-loss revolution, helping individuals lose weight without strenuous diet and exercise.</p>
+					<p><strong>Forskol’s active ingredient, Coleus Forskohlii root extract, is the potent stimulator of the molecule cyclic adenosine monophosphate (cAMP), which is responsible for aiding in weight loss.</strong></p>
+					<img src="images/product-bottle.png" alt="" class="bottle"/>
+					<p><strong>Forskol also stimulates the production of cAMP</strong> by activating an enzyme that affects almost every cell in the body and significantly influences metabolic processes to promote lean body mass and weight loss. This process increases your metabolism and unleashes a powerful tool to support your body to break down stored body fat once and for all! Results from various studies point out that Forskol is possibly a therapeutic natural remedy for the management and treatment of obesity!</p>
+					<a href="#" class="orderBtn"><img src="images/order-btn-yellow.png" alt=""/></a>
+				</div>
+			</div><!-- END extract -->
+		</div><!-- END extractWrapper -->
+		
+		<div id="how" class="container section">
+			<div class="row">
+				<p class="title">How Does Cyclic Adenosine Monophophate (cAMP) Work?</p>
+				<span class="subtitle">cAMP works by:</span>
+
+				<div class="sections features">
+					<div class="col-sm-4">
+						<img src="images/how-feature01.jpg" alt=""/>
+						<p class="heading">Boosts Metabolism</p>
+						<p>cAMP increases thermogenesis, which is related directly to your metabolism. During this period, heat is produced by the burning of fat. This process stimulates and prevents the addition of new fat and melts away existing fat by energizing your metabolism and burning excess calories.</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="images/how-feature02.jpg" alt=""/>
+						<p class="heading">Breaks Down Body Fat</p>
+						<p>The cAMP in Forskol activates lipase, which is an enzyme responsible for breaking apart fat cells in our body. Coleus forskohlii activates hormone sensitive lipase, which in turn targets triglycerides and cholesterol, benefiting your overall health.</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="images/how-feature03.jpg" alt=""/>
+						<p class="heading">Builds Lean Muscle</p>
+						<p>Forskol increases both thyroid hormone and free testosterone levels. One of the notable benefits of this chemical process is its ability to enhance lean muscle growth and increase strength, aiding in the reduction of body fat and improved metabolism.</p>
+					</div>
+				</div>
+			</div>
+		</div><!-- END how -->		
+		
+		<div id="storiesWrapper">
+			<div id="stories" class="container section">
+				<p class="title">Hear from Real Forskolin Extract Users<span>These are <em>real success stories!</em></span></p>
+				<ul class="listing">
+					<li	class="row">
+						<div class="col-sm-4 left">
+							<div class="image">
+								<img src="images/story-image.jpg" alt=""/>
+							</div>
+						</div>
+						
+						<div class="col-sm-8 right">
+							<p class="heading">“I purchased Forskolin Extract to enhance the effects of my diet.</p>
+							<p>I've been taking it as directed for the last 3 weeks and can already see a "leaner" me! I chose this brand because of the concentration of the product compared to other brands. I am VERY impressed so far!”</p>
+							<span class="author"><em>- Margaret G. –</em>Palo Alto, CA</span>
+							<span class="stars"><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/></span>
+							<span class="rating">5.0/5.0</span>
+						</div>
+					</li>
+					
+					<li	class="row">
+						<div class="col-sm-4 left">
+							<div class="image">
+								<img src="images/story-image.jpg" alt=""/>
+							</div>
+						</div>
+						
+						<div class="col-sm-8 right">
+							<p class="heading">“I purchased Forskolin Extract to enhance the effects of my diet.</p>
+							<p>I've been taking it as directed for the last 3 weeks and can already see a "leaner" me! I chose this brand because of the concentration of the product compared to other brands. I am VERY impressed so far!”</p>
+							<span class="author"><em>- Margaret G. –</em>Palo Alto, CA</span>
+							<span class="stars"><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/></span>
+							<span class="rating">5.0/5.0</span>
+						</div>
+					</li>
+					
+					<li	class="row">
+						<div class="col-sm-4 left">
+							<div class="image">
+								<img src="images/story-image.jpg" alt=""/>
+							</div>
+						</div>
+						
+						<div class="col-sm-8 right">
+							<p class="heading">“I purchased Forskolin Extract to enhance the effects of my diet.</p>
+							<p>I've been taking it as directed for the last 3 weeks and can already see a "leaner" me! I chose this brand because of the concentration of the product compared to other brands. I am VERY impressed so far!”</p>
+							<span class="author"><em>- Margaret G. –</em>Palo Alto, CA</span>
+							<span class="stars"><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/><img src="images/star.png" alt=""/></span>
+							<span class="rating">5.0/5.0</span>
+						</div>
+					</li>
+				</ul>
+			</div><!-- END stories -->
+		</div><!-- END storiesWrapper -->
+		
+		<div id="made" class="container section">
+			<div class="box">
+				<p class="title"><span>MADE IN THE<em>USA</em></span>FORSKOLIN EXTRACT IS PRODUCED IN THE UNITED STATES IN A STATE-OF-THE-ART FDA REGISTERED LABORATORY</p>
+				
+				<div class="row">
+					<div class="col-sm-push-8 col-sm-4 right">
+						<img src="images/usa-flag.png" alt=""/>
+					</div>
+					
+					<div class="col-sm-pull-4 col-sm-8 left">
+						<p class="certify">That conforms to the tested grade strength and purity of USP quality standards and is manufactured under the strict guidelines of the U.S. Food and Druge Administration's cGMP certification</p>
+						<div class="moneyback">
+							<img src="images/moneyback-seal.png" alt=""/>
+							<p>IF YOU'RE READY TO START LIVING THE LIFE YOU WANT, WE CAN HELP. THE BEST PART IS, IF YOU AREN'T GETTING THE RESULTS EXPECTED, WE OFFER A 30-DAY MONEY BACK GUARANTEE.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- END made -->	
+
+		<div id="buyWrapper">
+			<div id="buy" class="container section">
+				<img src="images/buy-model.png" alt="" class="model"/>
+				<img src="images/product-bottle.png" alt="" class="bottle"/>
+				
+				<div class="texts">
+					<img src="images/buy-title.png" alt="" class="title"/>
+					<a href="#" class="orderBtn"><img src="images/buy-btn.png" alt=""/></a>
+				</div>
+			</div><!-- END buy -->
+		</div><!-- END buyWrapper -->	
+
+		<div id="weAccept" class="section">
+			<div class="col-sm-4 leftSide">
+				<p>We Accept:</p>
+				<img src="images/cards-accept.png" alt=""/>
+			</div>
+			<div class="col-sm-8 rightSide">
+				<p>We Accept:</p>
+				<img src="images/we-accept.png" alt=""/>
+			</div>
+		</div><!-- END weAccept -->
+		
+	    {{> specialoffer/footer}}
+
+		</form>
+	</div><!-- END mainWrapper -->
+	
+	<script data-main="../scripts/app" src="../scripts/require.js"></script>
+	<script>
+		define('config',function(){
+			return {
+				DEBUG : true,
+				COUNTRYCODE : "US",
+				ZIPLOOKUP : true,
+				PAGETYPE : 'start'
+			}
+		});
+	</script>
+</body>
+</html>

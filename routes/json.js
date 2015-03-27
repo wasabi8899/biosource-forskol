@@ -44,9 +44,6 @@ router.get('/ziplookup', function(req, res, next) {
 router.get('/lead', function(req, res, next) {
 	// Set headers for json
 	util.SetAccessControl(res);
-    // console.log('LEAD Request from : ' + req.headers['referer']);
-
-    
     
     if (req.query.sfirst) {
         
@@ -80,7 +77,7 @@ router.get('/lead', function(req, res, next) {
             
             _res: res,
             _req: req,
-            _next: "/order",
+            _next: "order",
             callback : ProcessAPIResponse
         };
     
@@ -170,7 +167,7 @@ router.get('/sale', function(req, res, next) {
             
             _res: res,
             _req: req,
-            _next: "/thankyou",
+            _next: "thankyou",
             callback : ProcessAPIResponse,
             sv : "purchased"
 

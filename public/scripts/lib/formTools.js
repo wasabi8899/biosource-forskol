@@ -285,7 +285,7 @@ define(['jquery','messages','utilities','jquery.creditCardValidator','jquery.val
 		        zip5 = array[0];
 		    }
 
-			$.getJSON( "json/ziplookup?zip=" + zipcode, function( data ) {
+			$.getJSON( "/json/ziplookup?zip=" + zipcode, function( data ) {
 			  	if(data){
 			  		if(data.city)
 			  			city = data.city;

@@ -1,0 +1,162 @@
+@import (inline) "../public/specialoffer/css/style.css";
+@import (inline) "../public/css/font-awesome.min.css";
+@import (inline) "../public/css/smart-forms.css";
+@import (inline) "../public/css/bootstrap.min.css";
+@import "animations.less";
+
+ 
+em.state-error{
+	color:black; 
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, 1); 
+	padding-left:10px;
+}
+
+.state-error input,.state-error select{
+	border:1px solid red !important;
+	background-color: rgba(255, 208, 208, 1);
+
+}
+
+.modal-dialog {
+	/*margin-top:20%;*/
+	height:100%;
+}
+
+.modal-title {
+	font-size: 20px;
+	font-family: Tahoma;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.modal-body {
+	font-size:17px;
+	padding:0;
+}
+
+.modal-footer {
+	border-top:none;
+	text-align:center;
+}
+
+.modal-header button {
+	display:none;
+}
+ 
+.modal-content {
+	background-color: rgba(255, 255, 255, 0.77);
+	top:35%;
+	border-radius:20px; 
+}
+
+.billingInfo {
+	height: 35px !important;
+	font-size:11pt !important;
+}
+
+form #cardNumber {
+  background-image: url(../images/creditcards.png), url(../images/creditcards.png);
+  background-position: 2px -121px, 260px -61px;
+  background-size: 120px 361px, 120px 361px;
+  background-repeat: no-repeat;
+  padding-left: 54px !important;
+  width: 100% !important;
+  height:35px !important;
+}
+form #cardNumber.visa {
+  background-position: 2px -163px, 260px -61px;
+}
+form #cardNumber.visa_electron {
+  background-position: 2px -205px, 260px -61px;
+}
+form #cardNumber.mastercard {
+  background-position: 2px -247px, 260px -61px;
+}
+form #cardNumber.maestro {
+  background-position: 2px -289px, 260px -61px;
+}
+form #cardNumber.discover {
+  background-position: 2px -331px, 260px -61px;
+}
+form #cardNumber.valid.visa {
+  background-position: 2px -163px, 260px -87px;
+}
+form #cardNumber.valid.visa_electron {
+  background-position: 2px -205px, 260px -87px;
+}
+form #cardNumber.valid.mastercard {
+  background-position: 2px -247px, 260px -87px;
+}
+form #cardNumber.valid.maestro {
+  background-position: 2px -289px, 260px -87px;
+}
+form #cardNumber.valid.discover {
+  background-position: 2px -331px, 260px -87px;
+}
+
+
+@media (min-width: 768px){
+	.modal-dialog {
+		width:450px;
+	}
+}
+
+@media (min-width: 470px){
+	.modal-dialog {
+		width:450px;
+	}
+}
+
+#testMode {
+	position: fixed;
+	top:8px;
+	right:10px;
+	margin-right:0.5em;
+	border-radius: 4px;
+	padding-top:0.8125em;
+	padding-bottom:0.75em;
+	-webkit-appearance:none;
+	transition:background-color 300ms ease-out;
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	border-style:solid;
+	box-sizing: border-box;
+	border-width:0;
+	cursor:none;
+	font-family:inherit;
+	font-weight:bold;
+	line-height:normal;
+	margin:0 0 1.25em;
+	text-decoration:none;
+	text-align:center;
+	padding-right:1.5em;
+	padding-left:1.5em;
+	font-size:1em;
+	background-color:#2daebf;
+	border-color:#238896;color:white;
+	box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset !important;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        background-color: rgba(150, 35, 35, 0.37);
+        -webkit-box-shadow: 0 0 9px #333;
+    }
+    50% {
+        background-color: rgba(150, 35, 35, 0.67);
+        -webkit-box-shadow: 0 0 18px #a9014b;
+    }
+    to {
+        background-color: rgba(99, 0, 0, 0.37);
+        -webkit-box-shadow: 0 0 9px #333;
+    }
+}
+/*
+@-webkit-keyframes pulse {
+  from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}*/

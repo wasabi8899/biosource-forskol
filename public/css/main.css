@@ -3892,7 +3892,7 @@ html, body{
   padding-top: 31px;
   background-color: #000000;
   min-width: 95px;
-  background: #161616 url(../images/pattern_40.gif) top left repeat;
+  background: #161616 url(/images/pattern_40.gif) top left repeat;
 }
 .ball {
   background-color: rgba(0, 0, 0, 0);

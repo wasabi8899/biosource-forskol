@@ -12,7 +12,7 @@ define(["jquery","communication","messages"], function($,communication,messages)
 	 	switch(requestType){
 	         case "ADDLEAD" : 
 	             // Post data
-                $.getJSON("json/lead?" + visitor.toURL(), function (data) {
+                $.getJSON("/json/lead?" + visitor.toURL(), function (data) {
                     
                     if ((data.success) && (data.leadid)) {
 						visitor.leadId = data.leadid;
@@ -28,7 +28,7 @@ define(["jquery","communication","messages"], function($,communication,messages)
 				});
 	         break;
 	         case "SALE" :
-                $.getJSON("json/sale?" + visitor.toURL(true), function (data) {
+                $.getJSON("/json/sale?" + visitor.toURL(true), function (data) {
                     
 					if ((data.success) && (data.mid)) {
 						// visitor.orderId = [];
