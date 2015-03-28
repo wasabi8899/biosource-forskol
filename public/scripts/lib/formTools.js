@@ -76,6 +76,11 @@ define(['jquery','messages','utilities','jquery.creditCardValidator','jquery.val
 				rules : {required:true,email:true}
 			},
 			{
+				name : ["AGREETOTERMS","AGREE","TERMS"],
+				messages : {required:"<span style='font-size:12pt;font-weight:500;padding:10px;font-style:none;text-align:center;color:brown'>If you wish to proceed,<br>you must agree to<br>terms & conditions</span>"},
+				rules : {required:true}
+			},			
+			{
 				name : ["STATE","STATES","PROVINCES","PROVINCE"],
 				type : "state",
 				messages : {required:"Select your state"},

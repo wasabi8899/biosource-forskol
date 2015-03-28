@@ -1,8 +1,8 @@
 require(["jquery","formTools","formActions","visitor","globals","common","accounting","bootstrap","jquery.validate","additional-methods"], function($,formTools,formActions,visitor,globals,common) {
    		$(function() {
 
-			if (window.location.protocol != "https:")
-			    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+			// if (window.location.protocol != "https:")
+			//     window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 
 
    			// Common functions
