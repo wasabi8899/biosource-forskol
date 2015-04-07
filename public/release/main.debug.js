@@ -3514,6 +3514,7 @@ require(["jquery","globals","common","bootstrap"], function($,globals,common) {
    			common.init.bind(this)();
 
 			var that = this;
+			var these = this;
 
 			//
 			//	Home apge
@@ -3521,7 +3522,7 @@ require(["jquery","globals","common","bootstrap"], function($,globals,common) {
 			if(globals.PAGETYPE=='home'){
 
 			}
-
+   
 			// 
 			// Order form code
 			//
