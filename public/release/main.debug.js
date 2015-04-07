@@ -1984,9 +1984,6 @@ define('formActions',["jquery","communication","messages","utilities"], function
             }else{
 
                // Make sure form is valid
-               if(item.closest("form").valid()){
-                  sendRequest(item.data('action').toUpperCase());
-               }
 
                // Copy validation status on each item
                ['billingInfo','shippingInfo','paymentInfo'].forEach(function(info){
@@ -2002,6 +1999,11 @@ define('formActions',["jquery","communication","messages","utilities"], function
                   }
                   info.valid = valid;
                });
+
+               if(item.closest("form").valid()){
+                  sendRequest(item.data('action').toUpperCase());
+               }
+
             }
             visitor.save();
          });
@@ -3526,7 +3528,6 @@ require(["jquery","globals","common","bootstrap"], function($,globals,common) {
 				// Check if shipping info is valid or not
 				if(!this.visitor.shippingInfo.valid&&!globals.SKIPSHIPPINGCHECK){
 					// Go back a step
-					
 					document.location.href = '/';
 				}
 
