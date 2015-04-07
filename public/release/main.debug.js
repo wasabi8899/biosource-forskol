@@ -2036,9 +2036,9 @@ define('formActions',["jquery","communication","messages","utilities"], function
       switch(requestType){
          case "ADDLEAD" : 
              message = "Checking if offer is availabe in " + visitor.shippingInfo.city.value;
+            securedRedirect = true;
          break;
          case "SALE" :
-            securedRedirect = true;
              message = "We are processing your order";
              // Make sure there's at least 1 item selected
              var itemfound = false;
