@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+// var semver  = require('semver');
 
 var routes = require('./routes/index');
 // var json = require('./routes/json');
@@ -14,6 +15,37 @@ var session = require('express-session');
 
 var app = express();
 var path = require('path');
+
+
+var sslEnabled = true
+
+// Set the CDN options
+var options = {
+    publicDir  : path.join(__dirname, 'public')
+  , viewsDir   : path.join(__dirname, 'views')
+  , domain     : "biosource-forskol-herokuapp-com.global.ssl.fastly.net"
+  , hostname   : 'forskol.com'
+  , bucket : 'biosource-forskol-herokuapp-com'
+  , key : '58d9e082c5e0739594ddf8b1f28ed65f'
+  , secret : '1QVBe19hHGRQMhAwSGNoHJ'
+  , port       : (sslEnabled ? 443 : 1337)
+  , ssl        : sslEnabled
+  , production : true
+};
+
+
+
+// Initialize the CDN magic
+var CDN = require('express-cdn')(app, options);
+// app.locals({ CDN: CDN() });
+
+// // Add the view helper
+// if (semver.gte(express.version, '3.0.0'))
+  
+// else
+//   app.dynamicHelpers({ CDN: CDN });
+
+
 // Set global path
 global.appRoot = path.resolve(__dirname);
 
@@ -25,6 +57,7 @@ app.set('view engine', 'hbs');
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
+app.enable('view cache');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
