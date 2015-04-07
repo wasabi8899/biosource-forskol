@@ -275,7 +275,7 @@ $('document').ready(function () {
                 }
                 
                 // check for a cookie version if not found in storage
-                return cookieItem.value || cookieItem;
+                return (cookieItem?cookieItem.value||cookieItem:cookieItem);
                 break;
 
             case 'set':
