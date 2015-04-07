@@ -3526,6 +3526,7 @@ require(["jquery","globals","common","bootstrap"], function($,globals,common) {
 				// Check if shipping info is valid or not
 				if(!this.visitor.shippingInfo.valid&&!globals.SKIPSHIPPINGCHECK){
 					// Go back a step
+					alert('boobies');
 					document.location.href = '/';
 				}
 
@@ -3537,7 +3538,7 @@ require(["jquery","globals","common","bootstrap"], function($,globals,common) {
 
 				$(".offer").on("click", function(e){
 
-					item = $(this);
+					item = $(this); 
 
 					// Update stylesheets
 					$(".offer").removeClass("selected");
