@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var json = require('./routes/json');
+// var json = require('./routes/json');
 var helpers = require('./bin/helpers');
 var otherhelpers = require('./views/YOURHELPERS.js');
 var session = require('express-session');
@@ -40,7 +40,9 @@ app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secre
 
 // ROUTES 
 app.use('/', routes);
-app.use('/json', json);
+require('CRM-JSON').bind(app)(express);
+
+// app.use('/json', json);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

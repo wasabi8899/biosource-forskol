@@ -2,47 +2,56 @@
 	"CRM" : {
 		"apikey" : "c22f7374-16e9-4423-b207-4068fdb3af8b",
 		"storeid" : "461",
-		"leadtypeid" : "Garcix",
+		"leadtypeid" : "Forskol",
 		"defaults" : {
 			"campaignCode" : "WEB",
 			"landingPageID" : 1000,
 			"campaignId" : 12345,
-			"offer" : ""
+			"offer" : "",
+			"packageId" : 1234
 		}
 	},
 	"ORDERPAGE" : {
+		"groupPackageId" : 12404,
 		"products" : [
 			{
-				"description" : "BUY 3 BOTTLES & GET 2 FREE",
-				"packageId" : 12404,
-				"price" : 133,
+				"name" : "Buy 3 Bottles and Get 2 Bottles FREE + FREE Shipping",
+				"id" : 12404,
+				"packageId" : "12314",
+				"shortDescription" : "",
+				"description" : "",
+				"code" : "DEN1098",
+				"regularPrice" : 250,
+				"price" : 133.00,
 				"shipping" : 0
 			},
 			{
-				"description" : "BUY 2 BOTTLES & GET 1 FREE",
-				"packageId" : 12405,
+				"name" : "Buy 2 Bottles and Get 1 Bottle FREE + FREE Shipping",
+				"id" : 12405,
+				"packageId" : "12313",
+				"shortDescription" : "",
+				"description" : "",
+				"code" : "DEN1099",
+				"regularPrice" : 150,
 				"price" : 97.98,
 				"shipping" : 0
 			},
 			{
-				"description" : "BUY 1 BOTTLE",
-				"packageId" : 12406,
-				"price" : 58,
-				"shipping" : 0,
-				"products" : [
-								{	
-									"productId" : 4928,
-									"itemPrice" : 10,
-									"itemShipping" : 20,
-									"shippingTotal" : 20
-								}
-								]
+				"name" : "Buy 1 Bottle + FREE Shipping",
+				"id" : 12406,
+				"packageId" : "12313",
+				"shortDescription" : "",
+				"description" : "",
+				"code" : "DEN1100",
+				"regularPrice" : 99.99,
+				"price" : 58.00,
+				"shipping" : 0
 			}
 		],
 		
 		"allowedCountries" : ["US"],
 		"excludedStates" : [
-				{"countryCode":"US", "states" : ["AA","AP","AE"]}
+				{"countryCode":"US", "states" : ["AA","AP","AE","FM","MP"]}
 			]
 	}
 }

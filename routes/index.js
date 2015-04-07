@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var util = require('../bin/utilities.js');
+var util = require('CRM-JSON').utilities;
 
 /* MAIN SITE */
 
@@ -11,7 +11,7 @@ var util = require('../bin/utilities.js');
   	//   // output is in stdout
   	//   console.log(stdout);
   	// });
-    var util = require('../bin/utilities.js');
+    // var util = require('../bin/utilities.js');
 
     res.render('index', 
       { page: '/' ,states :   util.getStates("US")
@@ -32,6 +32,12 @@ var util = require('../bin/utilities.js');
   router.get('/terms', function(req, res, next) {
     res.render('terms', { page: '/terms' });
   });
+
+
+router.get('/termsbox', function(req, res, next) {
+  res.render('termsbox');
+});
+
 
 
   router.get('/privacy', function(req, res, next) {

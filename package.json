@@ -22,6 +22,7 @@
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0",
     "xml2js": "^0.4.6",
-	"urlencode2": "^1.0.0"
+	  "urlencode2": "^1.0.0",
+    "CRM-JSON" : "git+https://github.com/denisbetsi/CRM-JSON.git"
   }
 }

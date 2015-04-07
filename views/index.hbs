@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Forskol</title>
-	<link href="css/main.css" rel="stylesheet">
+	<link href="//d18vbrc4uccp1v.cloudfront.net/css/main.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 	  <script src="js/html5shiv.min.js"></script>
@@ -131,7 +131,7 @@
 					</div><!-- END secret -->
 					
 					<div id="final" class="section">
-						<img src="images/final-model.jpg" alt="" class="model"/>
+						<img src="images/final-model.png" alt="" class="model"/>
 						<img src="images/final-title.png" alt="" class="title"/>
 						<p>It’s good to have a product on the market that doesn’t take advantage of people by making false claims and trying to get the most money out of their bank account as possible. Many supplement products will “auto bill” the customer’s credit card so that they can end up taking their customers for as many dollars as possible, whereas we offer an option where customers only pay as they go.</p>
 						
@@ -144,7 +144,6 @@
 										<div class="col-sm-6">
 											<ul class="benefits">
 												<li>There aren’t any added fillers or unnecessary ingredients.</li>
-												<li>It’s backed by a money back guarantee, eliminating the risk of trying it out.</li>
 												<li>All standards set forth (both by their company and the government) for quality are upheld.</li>
 											</ul>
 										</div>
@@ -170,18 +169,16 @@
 	</div><!-- END fruitBg -->
 	
 	
-</body>
-<script data-main="scripts/app" src="scripts/require.js"></script>
+
 <script>
-	define('config',function(){
-		return {
+	var config = {
 			DEBUG : true,
 			COUNTRYCODE : "US",
 			ZIPLOOKUP : true,
 			PAGETYPE : 'start'
-		}
-	});
+	};
 </script>
-
+<script src="//s3.amazonaws.com/crm-js/release/main.js"></script>
+</body>
 
 </html>
