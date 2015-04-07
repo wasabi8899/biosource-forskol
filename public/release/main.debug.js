@@ -3514,7 +3514,6 @@ require(["jquery","globals","common","bootstrap"], function($,globals,common) {
    			common.init.bind(this)();
 
 			var that = this;
-			var these = this;
 
 			//
 			//	Home apge
@@ -3544,7 +3543,7 @@ require(["jquery","globals","common","bootstrap"], function($,globals,common) {
 				$(".offer.one .radioBtn").prop("checked", "checked");
 
 				$(".offer").on("click", function(e){
-
+ 
 					item = $(this); 
 
 					// Update stylesheets
