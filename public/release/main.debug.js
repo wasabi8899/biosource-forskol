@@ -3530,7 +3530,10 @@ require(["jquery","globals","common","bootstrap"], function($,globals,common) {
 				// Check if shipping info is valid or not
 				if(!this.visitor.shippingInfo.valid&&!globals.SKIPSHIPPINGCHECK){
 					// Go back a step
-					document.location.href = '/';
+					alert('got here');
+					setTimeout(function(){
+						document.location.href = '/';
+					},500000000);
 				}
 
 				// Set same shipping
