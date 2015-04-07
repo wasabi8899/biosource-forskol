@@ -2288,7 +2288,7 @@ define('visitor',['jquery','utilities','globals','accounting','underscore','velo
 						for (var property in info) {
 						    if (info.hasOwnProperty(property)) {
 								var formField = utilities.getParams(property,formFields);
-								if(formField){
+								if(formField.messages){
 									// Found it
 									
 									// Check if it's country
@@ -2333,7 +2333,7 @@ define('visitor',['jquery','utilities','globals','accounting','underscore','velo
 						for (var property in info) {
 						    if (info.hasOwnProperty(property)) {
 								var formField = utilities.getParams(property,formFields);
-								if(formField){
+								if(formField.messages){
 
 									// Found it
 									var obj = info[property];
@@ -2361,7 +2361,7 @@ define('visitor',['jquery','utilities','globals','accounting','underscore','velo
 						for (var property in info) {
 						    if (info.hasOwnProperty(property)) {
 								var formField = utilities.getParams("b" + property,formFields);
-								if(formField){
+								if(formField.messages){
 									// Found it
 									var obj = info[property];
 									var changeEvent = function(obj){
