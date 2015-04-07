@@ -280,19 +280,21 @@ $('document').ready(function () {
 
             case 'set':
                 var v = JSON.stringify(value);
+                var ds = d();
+
                 if ( typeof(Storage) !== "undefined" ) {
                     if (options.expires || options.persist) {
                         v = JSON.stringify($.extend({}, {value:value}, options));
                         localStorage.setItem(key, v);
-                        localStorage.setItem(key + '-ts', d());
+                        localStorage.setItem(key + '-ts', ds);
                     }
-                    else { sessionStorage.setItem(key, v);sessionStorage.setItem(key + '-ts', d()); }
+                    else { sessionStorage.setItem(key, v);sessionStorage.setItem(key + '-ts', ds); }
                 }
                 // else {
                 // always store the cookie
                 $.cookie(key, v, options);
                 // time stamp it
-                $.cookie(key +'-ts', d(), options);
+                $.cookie(key +'-ts', ds, options);
                 
 
                 return v;
