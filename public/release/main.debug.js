@@ -2000,6 +2000,8 @@ define('formActions',["jquery","communication","messages","utilities"], function
                   info.valid = valid;
                });
 
+               visitor.save();
+
                if(item.closest("form").valid()){
                   sendRequest(item.data('action').toUpperCase());
                }
