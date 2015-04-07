@@ -16,8 +16,8 @@
 		"products" : [
 			{
 				"name" : "Buy 3 Bottles and Get 2 Bottles FREE + FREE Shipping",
-				"id" : 12404,
-				"packageId" : "12314",
+				"id" : 12434,
+				"packageId" : "12434",
 				"shortDescription" : "",
 				"description" : "",
 				"code" : "DEN1098",
@@ -27,8 +27,8 @@
 			},
 			{
 				"name" : "Buy 2 Bottles and Get 1 Bottle FREE + FREE Shipping",
-				"id" : 12405,
-				"packageId" : "12313",
+				"id" : 12433,
+				"packageId" : "12433",
 				"shortDescription" : "",
 				"description" : "",
 				"code" : "DEN1099",
@@ -38,8 +38,8 @@
 			},
 			{
 				"name" : "Buy 1 Bottle + FREE Shipping",
-				"id" : 12406,
-				"packageId" : "12313",
+				"id" : 12435,
+				"packageId" : "12435",
 				"shortDescription" : "",
 				"description" : "",
 				"code" : "DEN1100",
