@@ -17,26 +17,9 @@ var app = express();
 var path = require('path');
 
 
-var sslEnabled = true
-
-// Set the CDN options
-var options = {
-    publicDir  : path.join(__dirname, 'public')
-  , viewsDir   : path.join(__dirname, 'views')
-  , domain     : "biosource-forskol-herokuapp-com.global.ssl.fastly.net"
-  , hostname   : 'forskol.com'
-  , bucket : 'biosource-forskol-herokuapp-com'
-  , key : '58d9e082c5e0739594ddf8b1f28ed65f'
-  , secret : '1QVBe19hHGRQMhAwSGNoHJ'
-  , port       : (sslEnabled ? 443 : 1337)
-  , ssl        : sslEnabled
-  , production : true
-};
-
-
 
 // Initialize the CDN magic
-var CDN = require('express-cdn')(app, options);
+// var CDN = require('express-cdn')(app, options);
 // app.locals({ CDN: CDN() });
 
 // // Add the view helper
